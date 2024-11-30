@@ -22,14 +22,6 @@
             color: #ff7f9c;
             margin-bottom: 20px;
         }
-        img {
-            max-width: 300px;
-            max-height: 300px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
-            animation: fadeIn 2s ease-in-out;
-        }
         p {
             font-size: 1.2em;
             color: #6d6d6d;
@@ -57,32 +49,19 @@
             from { opacity: 0; transform: scale(0.8); }
             to { opacity: 1; transform: scale(1); }
         }
-        .message {
-            display: none;
-            font-size: 1.2em;
-            color: #6d6d6d;
-            margin-top: 20px;
-            line-height: 1.6;
-            width: 90%;
-            max-width: 600px;
-        }
     </style>
 </head>
 <body>
-
-    <h1>Hi Sayangnya Aku ♡ </h1>
-    <p>Kamu tau nggak? Aku bahagia banget punya kamu di hidupku. Kamu itu bagian paling manis di hari-hariku. 💖</p>
-    <button onclick="showMessage()">More</button>
-
-    <!-- Pesan yang akan ditampilkan setelah tombol diklik -->
+    <h1>Hi Sayangnya Aku 💕</h1>
+    <p>Kamu tau nggak? Aku bahagia banget punya kamu di hidupku. Kamu itu bagian paling manis di hari-hariku. Yuk, kita bikin lebih banyak kenangan seru bareng! 💖</p>
+    <button onclick="alert('Aku sayang kamu selalu! 💕')">more</button>
     <div class="message" id="message">
-        <p>Aku happy kalo ada kamu di hidup aku, saling support, jadi tempat cerita, tempat aku bisa jadi diri sendiri, kamu tau segalanya tentang aku, sampai akar2nya, jadi untuk apa aku privasiin hidup aku? kamu org yg berarti di hidup aku, bukan orang lain. Aku selalu menantikan moment2 manis dengan kamu apapun wujudnya. Kamu itu bagian paling manis dalam hidupku, kaya marshmallow dicelupin coklat 🍫. Let's make more fun memories together! 🎉</p>
+        <p>Aku happy kalo ada kamu di hidup aku, saling support, jadi tempat cerita, tempat aku bisa jadi diri sendiri, kamu tau segalanya tentang aku, sampai akar2nya, jadi untuk apa aku privasiin hidup aku? kamu org yg berarti di hidup aku, bukan orang lain. Aku selalu menantikan moment2 manis dengan kamu apapun wujudnya
+        Kamu itu bagian paling manis dalam hidupku, kaya marshmallow dicelupin coklat 🍫. Let's make more fun memories together! 🎉</p>
         <p>I love you always and forever! 💖</p>
     </div>
-
     <script>
         function showMessage() {
-            // Menampilkan pesan
             document.getElementById('message').style.display = 'block';
         }
     </script>
