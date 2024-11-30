@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Sweetheart</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fdf6f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff7f9c;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            color: #6d6d6d;
+            width: 90%;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: rgba(255, 183, 197, 0.8);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: rgba(255, 128, 149, 0.9);
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .message {
+            display: none;
+            font-size: 1.2em;
+            color: #6d6d6d;
+            margin-top: 20px;
+            line-height: 1.6;
+            width: 90%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio Background -->
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-lovely.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h1>Hi Sayangnya Aku 💕</h1>
+    <img src="https://i.imgur.com/1plUsPA.jpg" alt="Foto Kita" />
+    <p>Kamu tau nggak? Aku bahagia banget punya kamu di hidupku. Kamu itu bagian paling manis di hari-hariku. 💖</p>
+    <button onclick="showMessage()">More</button>
+
+    <!-- Pesan yang akan ditampilkan setelah tombol diklik -->
+    <div class="message" id="message">
+        <p>Aku happy kalo ada kamu di hidup aku, saling support, jadi tempat cerita, tempat aku bisa jadi diri sendiri, kamu tau segalanya tentang aku, sampai akar2nya, jadi untuk apa aku privasiin hidup aku? kamu org yg berarti di hidup aku, bukan orang lain. Aku selalu menantikan moment2 manis dengan kamu apapun wujudnya. Kamu itu bagian paling manis dalam hidupku, kaya marshmallow dicelupin coklat 🍫. Let's make more fun memories together! 🎉</p>
+        <p>I love you always and forever! 💖</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            // Menampilkan pesan
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
